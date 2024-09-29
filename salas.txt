@@ -1,3 +1,2 @@
-id_sala: 1, capacidad: 71
-id_sala: 2, capacidad: 45
-id_sala: 3, capacidad: 64
+id_sala: 1, capacidad: 47
+id_sala: 2, capacidad: 56
