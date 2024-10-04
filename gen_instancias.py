@@ -36,7 +36,7 @@ shuffle(lista_tipos) # barajar la lista de tipos para aleatoriedad
 cantidad_asignaturas_1_bloque = round(cantidad_asignaturas*0.65)
 cantidad_asignaturas_2_bloque = cantidad_asignaturas - cantidad_asignaturas_1_bloque  #round(cantidad_asignaturas*0.35) #puede pasar el caso 50*0.65 = 32.5 redondeando = 33, y 50*0.32 = 17,5 = 18 -> 18+33= 51 != 50 agrega uno más
 #crear una lista con los bloques
-lista_bloques = [2] * cantidad_asignaturas_1_bloque + [2] * cantidad_asignaturas_2_bloque
+lista_bloques = [1] * cantidad_asignaturas_1_bloque + [2] * cantidad_asignaturas_2_bloque
 shuffle(lista_bloques) # barajar la lista para aleatoriedad
 
 
@@ -266,7 +266,7 @@ with open('input.lp', 'w') as f:
     f.seek(f.tell() - 2) #eliminar la última coma
     f.write(";\n")
     
-    # declarar t_ijk como variables binarias
+    #declarar t_ijk como variables binarias
     f.write("bin ")
     for i in range(1, cantidad_asignaturas + 1):
         for j in range(1, 35):  # para cada bloque de tiempo, excluyendo los finales
@@ -278,7 +278,7 @@ with open('input.lp', 'w') as f:
     f.write(";\n")
     
     
-    # declarar y_i como variables binarias
+    #declarar y_i como variables binarias
     f.write("bin ")
     for i in range(1, cantidad_asignaturas + 1):
         f.write(f"y{i}, ")
