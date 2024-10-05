@@ -190,7 +190,7 @@ with open('input.lp', 'w') as f:
     for i in range(1, cantidad_asignaturas + 1):
         tipo_asignatura = lista_asignaturas[i-1][1]  # tipo (1 if indispensable, 0 if evaluacion)
         W_i = 1 if tipo_asignatura == 1 else 0
-        f.write(f"y{i} >= {W_i} y{i};\n")
+        f.write(f"y{i} >= {W_i};\n")
         
     f.write("\n/* Restriccion: x_{ijk} <= y_i */\n")
     for i in range(1, cantidad_asignaturas + 1):
@@ -250,7 +250,6 @@ with open('input.lp', 'w') as f:
             R_ij = 0 if j in bloques_no_disponibles else 1  # R_ij = 0 si el profesor no puede, 1 si puede
             
             for k in range(1, cantidad_salas + 1):  
-                # modificamos la restricción para aplicar el multiplicador de Rij
                 f.write(f"x{i}_{j}_{k} <= {R_ij} x{i}_{j}_{k};\n")     
                     
                     
