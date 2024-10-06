@@ -110,7 +110,8 @@ print("Datos exportados a 'salas.txt'")
 
 
 #-----------------------GENERAR EL INPUT PARA LPSOLVE--------------------------------#
-with open('input.lp', 'w') as f:
+nombre_archivo_input= "input.lp"
+with open(nombre_archivo_input, 'w') as f:
 
     #Función Objetivo
     f.write("/* Funcion Objetivo*/\n")
@@ -284,6 +285,7 @@ with open('input.lp', 'w') as f:
     f.seek(f.tell() - 2)
     f.write(";\n")
 
+print("Input creado correctamente en " + nombre_archivo_input)
 #------------------------------------------------------------------------------------#     
         
         
