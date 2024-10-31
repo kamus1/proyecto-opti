@@ -1,1 +1,1 @@
-id_sala: 1, capacidad: 57
+id_sala: 1, capacidad: 80
