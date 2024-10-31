@@ -3,8 +3,8 @@ from random import *
 
 
 #------Parámetros-------#
-cantidad_asignaturas = 12 #de tabla 1 
-cantidad_salas       = 5  #de tabla 2 
+cantidad_asignaturas = 10 #de tabla 1 
+cantidad_salas       = 1  #de tabla 2 
 
 #rangos de interes asignatura
 interes_asginatura_inferior=40 #40
