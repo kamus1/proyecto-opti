@@ -3,8 +3,8 @@ from random import *
 
 
 #------Parámetros-------#
-cantidad_asignaturas = 35 #de tabla 1 
-cantidad_salas       = 1  #de tabla 2 
+cantidad_asignaturas = 280 #de tabla 1 
+cantidad_salas       = 16  #de tabla 2 
 
 #rangos de interes asignatura
 interes_asginatura_inferior=40 #40
@@ -287,5 +287,4 @@ with open(nombre_archivo_input, 'w') as f:
 
 print("Input creado correctamente en " + nombre_archivo_input)
 #------------------------------------------------------------------------------------#     
-        
         
